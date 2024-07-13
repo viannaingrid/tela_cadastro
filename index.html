@@ -3,10 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Tela de Cadastro</title>
 </head>
 <body>
-    <script src="assets/script.js"></script>
+    <div id="main-container">
+        <h1>Cadastre-se para acessar o sistema</h1>
+        <form id="register-form">
+            <div class="full-box">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Write here your email">
+            </div>
+            <div class="half-box spacing">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Write here your name">
+            </div>
+            <div class="half-box">
+                <label for="lastname">LastName</label>
+                <input type="text" name="lastname" id="lastname" placeholder="Write here your lastname">
+            </div>
+            <div class="half-box spacing">
+                <label for="lastname">Password</label>
+                <input type="password" name="password" id="password" placeholder="Write here your password">
+            </div>
+            <div class="half-box">
+                <label for="passconfirmation">Password Confirmation</label>
+                <input type="password" name="passconfirmation" id="passconfirmation" placeholder="Write your password again">
+            </div>
+            <div class="full-box"></div>
+                <input type="checkbox" name="agreement" id="agreement">
+                <label for="agreement" id="agreement-label">Eu li e aceito os <a href="#">termos de uso</a></label>
+            </div>
+            <div class="full-box"></div>
+                <input type="submit" id="btn-submit" value="register">
+            </div>
+        </form>
+    </div>
+    <p class="error-validation template"></p>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
